@@ -1,0 +1,252 @@
+.prd {
+  &.prd-default {
+    position: relative;
+    .prd-border {
+      border: 2px solid transparent;
+      border-radius: 15px;
+      overflow: hidden;
+      &:hover {
+        border-color: $green;
+        .prd-img-back {
+          display: block;
+        }
+
+        .prd-img {
+          display: none;
+        }
+
+      }
+
+      .prd-img-back {
+        height: 225px;
+        display: none;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .prd-img {
+        height: 225px;
+        display: block;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .prd-img-variable {
+        height: 225px;
+        display: none;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        //position: absolute;
+        //top: 0;
+        //left: 2px;
+        //right: 2px;
+        //width: 100%;
+        margin-top: -225px;
+      }
+
+      h4.prd-title a {
+        text-align: center;
+        font-size: 18px;
+        height: 55px;
+        padding-top: 10px;
+        display: block;
+        width: 100%;
+        color: $color-text;
+      }
+    }
+  }
+
+  &:hover .prod-price-box {
+    border: 2px solid $green;
+    border-top-width: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.prd-old-price {
+  color: $red-light;
+  text-align: center;
+  text-decoration: line-through;
+  white-space: nowrap;
+  span {
+    font-size: 18px;
+    font-weight: 400;
+    color: $color-text-light;
+  }
+}
+
+.prd-price {
+  text-align: center;
+  span {
+
+    font-size: 18px;
+    font-weight: 400;
+    color: $red-light;
+  }
+}
+
+.btn.btn-color-select {
+  color: white;
+  font-size: 17px;
+  border-radius: 13px;
+  background: #7e7e7e;
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+  line-height: 30px;
+  z-index: 1;
+  position: relative;
+  border-width: 0;
+}
+
+.btn.btn-color-select.collapsed {
+  border-radius: 13px;
+  padding-bootm: 6px;
+  margin-bottom: 0px;
+}
+
+.prod-price-box {
+  margin: 0;
+  padding: 0px;
+  padding-top: 20px;
+  position: absolute;
+  width: 100%;
+  left: 2px;
+  right: 2px;
+  margin-top: -10px;
+  border-radius: 0 0 15px 15px;
+  background-color: white;
+
+  input[type=text] {
+    background: $grey;
+    &.form-control {
+      padding-left: 2px;
+      padding-right: 2px;
+      text-align: center;
+    }
+  }
+  label {
+    line-height: 34px;
+    font-weight: normal;
+
+    &.goods-bag-count {
+      margin-left: 15px;
+      .icon-bag-grey, .icon-bag-red {
+        position: absolute;
+        top: 7px;
+        left: 0;
+      }
+    }
+  }
+
+  .goods-group {
+    clear: both;
+    padding: 3px 0;
+    &:hover {
+      border-color: $green;
+      border-width: 1px 0;
+      padding: 2px 0;
+      background-color: lighten($green, 65%);
+      border-style: solid;
+    }
+  }
+
+  .btn.prd-buy {
+    border-radius: 0 0 13px 13px;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    background: #7e7e7e;
+    width: 100%;
+  }
+}
+
+.btn-touchspin {
+  background-color: $green;
+  padding: 12px;
+  width: 190px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.form-touch-min {
+  font-size: 15px;
+  .input-group {
+    width: 90px;
+  }
+
+  .form-control {
+    height: 26px;
+    text-align: center;
+    padding: 6px 1px;
+  }
+
+  .btn {
+    padding: 1px 9px;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 6px;
+  }
+}
+
+table.table-buy-single {
+  td {
+    width: 33.33%;
+    border-right: 1px solid white;
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.goods-bag-count {
+  margin: 0;
+}
+
+.btn-clear {
+  background: transparent;
+  border: none;
+  line-height: inherit;
+}
+
+.single-buy-touchspin {
+  .input-group {
+    width: 100%;
+    & > * {
+      width: 30%;
+    }
+    & > input {
+      width: 40%;
+    }
+
+    input, button {
+      background: transparent;
+      color: white;
+      text-align: center;
+      padding: 0;
+      height: auto;
+      line-height: 30px;
+      width: 100%;
+      border: none;
+    }
+
+    input {
+      background: rgba(256, 256, 256, 0.5);
+    }
+  }
+}
+
+label.goods-bag-count {
+  padding-left: 20px;
+  position: relative;
+}
+
+
+

@@ -1,0 +1,9 @@
+.btn-favorite, .btn-favorite:hover, .btn-favorite:active, .btn-favorite:focus{
+    color: #fac2c2;
+    font-size: 21px;
+    outline: none;
+}
+
+.btn-favorite.active, .btn-favorite.active:hover, .btn-favorite.active:active, .btn-favorite.active:focus{
+    color: #ef3939;
+}

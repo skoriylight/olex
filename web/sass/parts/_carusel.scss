@@ -1,0 +1,22 @@
+.slick-next, .slick-next:hover, .slick-next:focus  {
+  right: -20px;
+  background: url(/images/next.png) no-repeat;
+  height: 24px;
+  &:before{
+    content: '';
+  }
+}
+
+.slick-prev, .slick-prev:hover , .slick-prev:focus {
+  left: -20px;
+  background: url(/images/prev.png) no-repeat;
+  background-position: right;
+  height: 24px;
+  &:before{
+    content: '';
+  }
+}
+
+.slick-initialized.slick-slider{
+  margin: 0 15px;
+}

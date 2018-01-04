@@ -1,0 +1,128 @@
+.catalog-view{
+  .product-title{
+    font-size: 23px;
+    line-height: 22px;
+    margin: 0;
+  }
+
+  .product-info-block{
+    background: url("/images/dashed_border.png") top left repeat-x, url("/images/dashed_border.png") bottom left repeat-x;
+    padding: 8px 0 16px 0;
+    margin: 9px 0 12px 0;
+  }
+
+  .product-sku{
+    color: #aeaeae;
+  }
+
+  product-available{
+    color: $green;
+    padding-top: 4px;
+  }
+
+  .product-price{
+    font-weight: 500;
+    font-size: 30px;
+    color: $red-light;
+    width: 40%;
+    display: inline-block;
+    width: 100%;
+    clear: both;
+    line-height: 25px;
+    padding: 20px 0 0 0;
+  }
+
+  .sp-image-container{
+    border-radius: 5%;
+    border: 1px solid #c3c3c3 !important;
+
+  }
+
+  .sp-thumbnail-container{
+     border-color: $grey;
+    border-radius: 10px;
+   }
+  .sp-selected-thumbnail {
+    border: 1px solid #222222 ;
+
+  }
+
+
+}
+
+
+table tr.btn-buy-group{
+  font-size: 0;
+  &>td{
+    font-size: 14px;
+    width: 33.33%;
+
+    padding-top: 20px;
+    min-height: 40px;
+
+    &:first-child{
+      text-align: left;
+    }
+    &:last-child{
+      text-align: right;
+    }
+    &:nth-child{
+      text-align: center;
+    }
+  }
+
+}
+
+.box-color{
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border-radius: 6px;
+  border: 1px solid $grey;
+}
+
+.btn-product-collapse{
+  font-size: 15px;
+}
+.btn-product-collapse:after, .btn-product-collapse:before{
+  content: '';
+  width: 16px;
+  height: 11px;
+  background-image: url('/images/chevron-down.png');
+  display: inline-block;
+}
+
+.btn-product-collapse[aria-expanded="true"]:after, .btn-product-collapse[aria-expanded="true"]:before{
+  background-image: url('/images/chevron-up.png');
+}
+
+
+
+.breadcrumb{
+  list-style: none;
+  float: left;
+  background: transparent;
+  li {
+    float: left;
+    line-height: 30px;
+    padding-right: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #3c3c3c;
+    & + li::before {
+      line-height: 30px;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 18px;
+      color: #3c3c3c;
+      content: '\00BB';
+    }
+    a {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 18px;
+      color: #3c3c3c;
+    }
+  }
+}

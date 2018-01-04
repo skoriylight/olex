@@ -1,0 +1,156 @@
+.small-mark-group{
+  color: $color-text-light;
+}
+
+.attr-icon{
+  display: inline-block;
+  z-index: 100;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  font-family: "Calibri";
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  border: 3px solid transparent;
+  line-height: 30px;
+  color: white;
+
+  &.attr-sale{
+    background-color: $color-sale-icon;
+  }
+  &.attr-coming{
+    background-color: $color-coming-icon;
+  }
+  &.attr-new{
+    background-color: $color-new-icon;
+  }
+  &.attr-hit{
+    background-color: $color-hit-icon;
+  }
+  &.attr-stock{
+    background-color: $color-stock-icon;
+  }
+  &.attr-green{
+    background-color: $green;
+  }
+  &.attr-green-light{
+    background-color: $green-light;
+  }
+}
+
+.attr-label{
+  text-align: center;
+
+  .attr-icon{
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    border-color: white;
+  }
+
+  display: inline-block;
+  position: relative;
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  padding-left: 38px;
+  padding-right: 12px;
+  white-space: nowrap;
+
+  &.attr-sale{
+    background-color: $color-sale-label;
+  }
+  &.attr-coming{
+    background-color: $color-coming-label;
+  }
+  &.attr-new{
+    background-color: $color-new-label;
+  }
+  &.attr-hit{
+    background-color: $color-hit-label;
+  }
+  &.attr-stock{
+    background-color: $color-stock-label;
+  }
+  &.attr-green{
+    background-color: $green;
+  }
+  &.attr-green-light{
+    background-color: $green-light;
+  }
+
+  &.attr-block{
+    display: block;
+  }
+
+}
+
+.attr-container{
+  margin-bottom: 10px;
+  width: 100%;
+  .attr-label{
+
+  }
+
+  .attr-href{
+
+    display: inline-block;
+    font-size: 13px;
+    line-height: 19px;
+
+    white-space: nowrap;
+    border-radius: 15px;
+    padding-left: 9px;
+    padding-right: 9px;
+
+    color: #fff;
+
+    &.attr-sale{
+      background-color: $color-sale-label;
+    }
+    &.attr-coming{
+      background-color: $color-coming-label;
+    }
+    &.attr-new{
+      background-color: $color-new-label;
+    }
+    &.attr-hit{
+      background-color: $color-hit-label;
+    }
+    &.attr-stock{
+      background-color: $color-stock-label;
+    }
+
+    &:hover{
+      background-color: #e1e1e1;
+      color: #222222;
+    }
+  }
+
+
+
+
+  .attr-line{
+    margin-left: 20px;
+    width: 100%;
+    height: 1px;
+
+    &.attr-sale{
+      background-color: $color-sale-label;
+    }
+    &.attr-coming{
+      background-color: $color-coming-label;
+    }
+    &.attr-new{
+      background-color: $color-new-label;
+    }
+    &.attr-hit{
+      background-color: $color-hit-label;
+    }
+    &.attr-stock{
+      background-color: $color-stock-label;
+    }
+  }
+}

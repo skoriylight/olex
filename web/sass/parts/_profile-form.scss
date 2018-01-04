@@ -1,0 +1,89 @@
+.user-profile-update {
+  border: 2px solid $green;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  font-weight: normal;
+  padding: 10px 25px;
+}
+
+.btn.btn-save {
+  background-color: $green;
+  border-radius: 17px;
+  color: white;
+}
+
+.btn-profile-edit {
+  color: $green;
+  font-size: 16px;
+  line-height: 20px;
+  border-bottom: 2px dashed $green;
+  font-weight: normal;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.vertical-border {
+  background-color: $green;
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+}
+
+.nav-cabinet {
+  margin: 0;
+
+  li {
+
+    padding-bottom: 15px;
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    &.active {
+      a {
+        background-color: $green;
+
+      }
+      .cabinet-nav-label {
+        display: inline-block;
+      }
+    }
+
+    a {
+      display: block;
+      text-align: left;
+      position: relative;
+
+      border-radius: 15px;
+      font-size: 16px;
+      line-height: 30px;
+      color: #fff;
+      white-space: nowrap;
+      background: $green-light;
+      padding: 1px 10px;
+    }
+    .cabinet-nav-label {
+      display: none;
+      content: '';
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      z-index: 100;
+      width: 36px;
+      height: 36px;
+      border-radius: 18px;
+      border: 3px #fff solid;
+      font-family: "Calibri";
+      font-weight: bold;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      i{
+        line-height: 30px;
+      }
+    }
+  }
+}

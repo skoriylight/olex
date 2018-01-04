@@ -1,0 +1,46 @@
+body {
+  padding-top: 50px;
+  background-image: url("../images/fon_3.png"); }
+
+.navbar {
+  min-height: 30px; }
+
+.navbar-brand {
+  padding: 0 5px;
+  height: 30px;
+  line-height: 30px; }
+
+.navbar-toggle {
+  margin-top: 5px;
+  padding: 3px 5px !important; }
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height 27px) / 2 = 26.5px */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 10px; } }
+.upload-kit-xs {
+  display: inline-block;
+  width: 6px; }
+  .upload-kit-xs ul.files > li.upload-kit-item.image, .upload-kit-xs li.upload-kit-input {
+    height: 50px;
+    width: 50px;
+    line-height: 44px;
+    text-align: center;
+    border-width: 1px;
+    margin: 0 5px; }
+    .upload-kit-xs ul.files > li.upload-kit-item.image img, .upload-kit-xs li.upload-kit-input img {
+      max-height: 100%;
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      border-radius: 0; }
+    .upload-kit-xs ul.files > li.upload-kit-item.image .name, .upload-kit-xs li.upload-kit-input .name {
+      display: none; }
+
+.field-product-property_ids .panel-body {
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll; }
+/*# sourceMappingURL=main.css.map */

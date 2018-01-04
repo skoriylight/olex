@@ -1,0 +1,174 @@
+table.table.cart-table{
+  text-align: center;
+
+
+  .bootstrap-touchspin{
+    width: 140px;
+    margin: 0 auto;
+  }
+
+  .bootstrap-touchspin-down{
+    border-bottom-color: $green;
+    border-left-color: $green;
+    border-top-color: $green;
+    border-radius: 15px 0 0 15px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .bootstrap-touchspin-up{
+    border-bottom-color: $green;
+    border-right-color: $green;
+    border-top-color: $green;
+    border-radius: 0 15px 15px 0;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .bootstrap-touchspin{
+    .btn{
+      padding: 10px 12px;
+    }
+
+    input{
+      padding: 10px 12px;
+      height: 42px;
+      border-top-color: $green;
+      border-bottom-color: $green;
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+
+  .cart-thumb{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    border: 1px solid $grey;
+  }
+
+  thead:first-child > tr:first-child > th{
+    text-align: center;
+    padding-top: 7px;
+    height: 35px;
+    padding-left: 0;
+
+    border-top: 3px solid $green;
+
+    &:after{
+      content: '';
+      display: block;
+      border-right: 1px solid $grey-dark;
+      height: 20px;
+      float: right;
+    }
+
+    &:last-child:after{
+      border: none;
+    }
+  }
+  tbody{
+    border-width: 0;
+  }
+   tbody > tr > td{
+    vertical-align: middle;
+     padding: 0;
+     border-width: 0;
+     position: relative;
+  }
+
+  tr[data-key]>td:before{
+    content: '';
+    position: absolute;
+    border-top: 1px solid $grey;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+
+  h4>a.cart-title{
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .cart-price{
+    font-size: 20px;
+    color: #de4b4b;
+    font-weight: 500;
+  }
+}
+
+.cart-collapse{
+  display: none;
+
+  &.in{
+    display: block;
+
+  }
+}
+
+[aria-expanded]{
+  .attr-toogle-icon{
+    display: inline-block;
+  }
+  .attr-toogle-icon::after{
+    content: '';
+    width: 16px;
+    height: 11px;
+    background-image: url("/images/chevron-down.png");
+    display: inline-block;
+  }
+}
+
+[aria-expanded="false"]{
+  .attr-toogle-icon::after{
+    background-image: url("/images/chevron-up.png");
+
+  }
+}
+
+.attr-label-gorup{
+  display: flex;
+  flex-direction: row;
+
+  .group-el{
+    margin-left: -2%;
+    prosition: relative;
+    border: 3px solid white;
+    border-radius: 36px;
+    &:first-child{
+      margin-left: 0;
+      z-index: 4;
+    }
+
+    &:nth-child(2){
+      z-index: 3;
+    }
+
+    &.group-col-9{
+      width: 100/12*9+2%
+    }
+
+    &.group-col-3{
+      width: 100/12*3+2%
+    }
+
+  }
+}
+
+.attr-category{
+  text-align: left;
+  padding: 0 50px;
+}
+
+.btn.btn-to-cart{
+  border-redius: 0px;
+  background-color:  #6c6c6c;
+  color: white;
+  text-decoration: none;
+  width: 170px;
+
+}
+

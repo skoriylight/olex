@@ -1,0 +1,21 @@
+.navbar {
+  min-height: 30px;
+}
+.navbar-brand {
+  padding: 0 5px;
+  height: 30px;
+  line-height: 30px;
+}
+.navbar-toggle {
+
+  margin-top: 5px;
+  padding: 3px 5px !important;
+}
+@media (min-width: 768px) {
+.navbar-nav > li > a {
+  /* (80px - line-height 27px) / 2 = 26.5px */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 10px;
+}
+}

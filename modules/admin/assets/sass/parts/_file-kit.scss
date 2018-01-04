@@ -1,0 +1,24 @@
+.upload-kit-xs{
+  display: inline-block;
+  width: 6px;
+  ul.files>li.upload-kit-item.image, li.upload-kit-input{
+    height: 50px;
+    width: 50px;
+    line-height: 44px;
+    text-align: center;
+    border-width: 1px;
+    margin: 0 5px;
+
+    img{
+      max-height: 100%;
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      border-radius: 0;
+    }
+
+    .name{
+      display: none;
+    }
+  }
+}

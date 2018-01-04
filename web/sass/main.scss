@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
+
+html , body{
+  height: 100%;
+}
+
+body{
+  font-family: "Roboto" , sans-serif;
+}
+
+a{
+  cursor: pointer;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+ul {
+  padding: 0;
+}
+ol, ul {
+  list-style: none;
+}
+
+hr{
+  margin: 10px 0;
+}
+
+.wrap{
+  min-height: 100%;
+  position: relative;
+}
+
+
+
+//modules
+@import "modules/flex";
+@import "modules/bootstrap-theme";
+//parts
+@import "colors";
+@import "parts/header-top";
+@import "parts/header-main";
+@import "parts/items";
+@import "parts/item_view_line";
+@import "parts/category_sidebar";
+@import "parts/small";
+@import "parts/catalog-menu-block";
+@import "parts/view-bar";
+@import "parts/footer";
+@import "parts/carusel";
+@import "parts/mark-attr";
+@import "parts/slider";
+@import "parts/advert-block";
+@import "parts/cart-table";
+@import "parts/view";
+@import "parts/view-tabs";
+@import "parts/filters";
+@import "parts/order";
+@import "parts/profile-form";
+@import "parts/category-pop";
+@import "parts/btn-toggle-view";
+@import "parts/modalajax";
+
+

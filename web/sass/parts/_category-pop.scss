@@ -1,0 +1,41 @@
+.category-pop-container{
+  width: 0;
+  position: absolute;
+  height: 0;
+  right: 10px;
+}
+.category-pop-box{
+  display: none;
+  bottom: 0;
+  border-radius: 10px;
+  border: 1px solid $green;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  width: 1000px;
+  padding: 10px 20px;
+  height: 610px;
+  margin-top: -290px;
+  position: fixed;
+  top: 47%;
+  
+  background-color: white;
+  z-index: 1000;
+
+}
+li.category-pop-letter{
+  font-size: 18px;
+  line-height: 23px;
+  color: #ff5858;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+li.category-pop-title a{
+ color: $color-text-light;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+[data-role="catalog-pop"]:hover + .category-pop-container .category-pop-box, .category-pop-box:hover{
+  display: block;
+}

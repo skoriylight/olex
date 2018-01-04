@@ -1,0 +1,24 @@
+.prd.prd-line{
+  display: table;
+  width: 100%;
+  &>div{
+    display: table-cell;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    height: 40px;
+  }
+
+  .prd-sector-btn{
+    width: 300px;
+  }
+
+  .prd-sector-price, .prd-sector-old-price, .prd-sector-favorite{
+    width: 90px;
+  }
+
+  .prd-sector-title a{
+    font-size: 18px;
+    color: black;
+  }
+}

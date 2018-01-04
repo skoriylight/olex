@@ -1,0 +1,89 @@
+footer{
+  padding: 25px 0;
+  background-color: $grey;
+  font-size: 20px;
+  height: 133px;
+  margin-top: -133px;
+  .icon-footer {
+
+    width: 64px;
+    height: 43px;
+    margin-right: 13px;
+    margin-top: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    &.pb24{
+      background-image: url(/images/footer/icon-pb-footer.png);
+    }
+
+    &.visa{
+      background-image: url(/images/footer/icon-visa-footer.png);
+    }
+
+    &.master-card{
+      background-image: url(/images/footer/icon-masterCard-footer.png);
+    }
+
+  }
+}
+
+.footer-wrap{
+  height: 133px;
+  clear: both;
+}
+
+.mobile-store-btn, .mobile-store-btn:hover, .mobile-store-btn:focus, .mobile-store-btn:visited {
+
+  display: inline-block;
+  width: 138px;
+  height: 46px;
+  border: 1px #242424 solid;
+  border-radius: 5px;
+  background: #575757;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  //font-family: 'PT Sans', sans-serif;
+  letter-spacing: 0;
+  padding: 6px 4px 7px;
+
+}
+
+.mobile-store-icon {
+
+  width: 27px;
+  height: 31px;
+  display: inline-block;
+  float: left;
+  margin-right: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.mobile-store-icon.android {
+  background-image: url(/images/footer/icon-android.png);
+}
+
+.mobile-store-icon.apple {
+
+  background-image: url(/images/footer/icon-apple.png);
+}
+
+.footer-logo.copyright{
+ padding-top: 22px;
+  display: inline-block;
+}
+
+.icon-footer.vk {
+  background-image: url(/images/footer/icon-vk-footer.png);
+}
+
+.icon-footer.fb {
+  background-image: url(/images/footer/icon-fb-footer.png);
+}
+
+.icon-footer.in {
+  background-image: url(/images/footer/icon-in-footer.png);
+}
